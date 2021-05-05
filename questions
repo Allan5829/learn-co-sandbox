@@ -1,0 +1,31 @@
+questions to ask chort lead
+Output
+
+(master) popular_manga
+// ♥ ./popular-manga
+bash: ./popular-manga: No such file or directory
+
+(master) popular_manga
+// ♥ bin/popular-manga
+bash: bin/popular-manga: Permission denied
+
+[06:52:41] (master) popular_manga
+// ♥ ruby bin/popular-manga
+Welcome to the Popular Manga CLI!
+Please select the manga you would like to learn more about by typing 1-5
+1- One Piece
+2- Naruto
+3- Fullmetal Alchemist
+4- My Hero Academia
+5- One Punch Man
+
+inside the bin/popular-manga
+#!/usr/bin/env ruby
+
+require_relative "../lib/controller.rb"
+
+Controller.new.start
+
+(master) popular_manga
+// ♥ chmod +x popular-manga   -saw that this could solve the persmission denied in the CLI gem walkthrough
+chmod: cannot access 'popular-manga': No such file or directory

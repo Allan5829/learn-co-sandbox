@@ -1,0 +1,12 @@
+git clone git@github.com:Allan5829/popular_manga.git
+cd popular_manga
+
+
+to save
+
+git add .
+git commit -m "what's been changed"
+git push
+
+
+https://www.youtube.com/watch?v=_lDExWIhYKI    51:56
